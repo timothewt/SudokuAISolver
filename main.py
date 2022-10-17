@@ -140,15 +140,15 @@ class Sudoku:
          |  current (index in the grid) is 0
          |  while current index is less than 9 * 9
          |   |  if the digit is a default one:
-         |   |   |     current is current + 1
+         |   |   |  current is current + 1
          |   |  else:
          |   |   |  if the current state is rejected:
          |   |   |   |  if the current digit is less than 9:
-         |   |   |   |   |  add one to it
+         |   |   |   |   |  add one to the current digit
          |   |   |   |  else
-         |   |   |   |   |  set its value to zero
-         |   |   |   |   |  go back to the last non-default digit
-         |   |   |   |   |  add one to it
+         |   |   |   |   |  set the current digit to zero
+         |   |   |   |   |  current goes back to the last non-default digit
+         |   |   |   |   |  add one to the current digit
          |   |   |   |  end if
          |   |   |  else:
          |   |   |   |  current is current + 1
