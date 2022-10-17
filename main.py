@@ -131,7 +131,7 @@ class Sudoku:
             return True
         return False
 
-    def solve(self) -> np.ndarray:
+    def solve(self) -> bool:
         """
         Solves the sudoku using backtracking
         ----
@@ -157,7 +157,7 @@ class Sudoku:
          |  end while
         end while
         ----
-        :return: The completed grid, or False if it cannot be solved
+        :return: True if the sudoku has been solved, False otherwise
         """
         while not self.accept():
             current = 0
@@ -179,7 +179,7 @@ class Sudoku:
                             self.grid.get_digit(current).value = self.grid.get_digit(current).value + 1
                     else:
                         current = current + 1
-        return self.grid
+        return True
 
 
 if __name__ == "__main__":
