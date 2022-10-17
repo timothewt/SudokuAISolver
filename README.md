@@ -3,7 +3,7 @@
 This program solves 9x9 sudoku grids using backtracking.<br/>
 It reads the sudoku from the `data.csv` file (the first line), and solves it.
 
-<img src="https://i.ibb.co/SsP6Pjt/example.png" alt="Example" width="30%">
+<img src="https://i.ibb.co/SsP6Pjt/example.png" alt="Example" width="20%">
 
 ### How to use
 
